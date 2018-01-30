@@ -81,6 +81,13 @@ a:focus {
     text-decoration: none;
     color: @link-hover-color;
 }
+ul {
+    padding: 0;
+    li {
+        list-style: none;
+    }
+}
+
 img {
     max-width: 100%;
 }
@@ -89,9 +96,20 @@ main {
     min-height: 300px;
     float: left;
 }
-.cover-background {
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center center;
+.row {
+    margin: 0;
 }
-
+.no-padding {
+    padding: 0;
+}
+.no-padding-left {
+    padding-left: 0;
+}
+.no-padding-right {
+    padding-right: 0;
+}
+.place {
+    font-size: 14px;
+    color: @secondary-color;
+    font-weight: 600;
+}

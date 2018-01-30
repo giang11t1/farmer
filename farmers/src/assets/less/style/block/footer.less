@@ -1,99 +1,27 @@
 footer {
-    width: 100%;
-    height: 70px;
-    float: left;
-    padding: 0;
-    margin-top: 25px;
-    color: #fff;
-    background-color: @primary-color;
-    @media(max-width: @screen-xs-max) {
-        height: auto
-    }
-    .container {
-        > div {
-            padding: 15px 0;
-        }
-        .footer-hotline {
-            @media(max-width: @screen-xs-max) {
-                padding-bottom: 0;
-                padding-top: 10px;
-            }
-        }
-        .hotline {
-            a {
-                display: inline-block;
-                padding-left: 52px;
-                color: #fff;
-                position: relative;
-                &:before {
-                    content: '';
-                    display: block;
-                    width: 36px;
-                    height: 36px;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background: url(../images/upload/call.png) no-repeat center center;
-                    background-size: 100% 100%;
-                }
-            }
-            .hotline-title {
-                display: block;
-                float: left;
-                margin-right: 12px;
-                span {
-                    display: block;
-                }
-            }
-            .note {
-                font-style: italic;
-            }
-            .hotline-number {
-                font-weight: bold;
-                font-size: 36px;
-                line-height: 38px;
-                @media(max-width: @screen-xs-max) {
-                    font-size: 16px;
-                }
-                @media(max-width: @screen-sm-max) {
-                    font-size: 20px;
+   display: inline-block;
+   width: 100%;
+   .list-menu {
+        background: #252f3f;
+        color: #fff;
+        ul.list-menu {
+            padding: 0;
+            li {
+                list-style: none;
+                a {
+                    color: #fff;
                 }
             }
         }
-        .footer-address {
-            text-align: right;
-            span {
-                width: 100%;
-                display: inline-block;
-                line-height: 20px;
-                &:first-child {
-                    font-weight: 600;
-                }
-                &:last-child {
-                    font-size: 14px;
-                }
-            }
-            @media(max-width: @screen-xs-max) {
-                text-align: center;
-                padding-top: 10px;
-                padding-bottom: 5px;
-            }
-            @media(max-width: @screen-sm-max) {
-                span {
-                    &:last-child {
-                        font-size: 9px;
-                    }
-                }
-            }
+   } 
+   .bottom-ft {
+        background: #141a23;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 25px 0;
+        p {
+            margin: 0;
         }
-    }
-    @media(max-width: @screen-xs-max) {
-        font-size: 12px;
-        .container {
-            > div {
-                padding-top: 15px;
-                padding-bottom: 15px;
-            }
-        }
-    }
+   }
 }
