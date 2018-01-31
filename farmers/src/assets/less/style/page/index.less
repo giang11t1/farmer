@@ -38,6 +38,9 @@ body {
     .slide-one {
         background: url('../images/upload/banner.png');
     }
+    .slide-retailer {
+        background: url('../images/upload/banner-2.png');
+    }
     .slide1 {
         background: url('../images/banner-1.png');
     }
@@ -160,6 +163,29 @@ body {
     .block {
         margin-bottom: 25px;
     }
+    .block-detail {
+        .wrap-img {
+            width: 50%;
+            height: 400px;
+            float: left;
+            margin-right: 30px;
+            margin-bottom: 35px;
+            position: relative;
+            overflow: hidden;
+            img.main {
+                position: absolute;
+                left: -100%;
+                right: -100%;
+                top: -100%;
+                bottom: -100%;
+                margin: auto;
+                max-height: 100%;
+                max-width: 100%;
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
     .flag-col {
         padding: 15px;
         position: relative;
@@ -263,6 +289,26 @@ body {
             border-left-color: #007a4d;
         }
     }
+    .native {
+        background: url('../images/upload/bg-retailer1.png') no-repeat;
+        &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-left-color: #fff;
+        }
+        .inner {
+            color: #242424;
+        }
+    }
+    .wolrd {
+        background: url('../images/upload/bg-retailer2.png') no-repeat;
+        &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-left-color: #fff;
+        }
+        .inner {
+            color: #242424;
+        }
+    }
     .owl-carousel {
         .item {
             width: 90%;
@@ -320,6 +366,48 @@ body {
         }
     }
 }
+
+.title-article {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #141a23;
+    letter-spacing: 3px;
+    margin: 0;
+}
+.choice {
+    padding: 3px 30px;
+    background: #f7941d;
+    color: #252f3f;
+    font-size: 12px;
+    margin-top: 15px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    span {
+        color: #fff;
+    }
+}
+.infor {
+    p {
+        margin: 0;
+    }
+}
+.retailers, .retailers-detail {
+    .banner {
+        position: relative;
+        .top-choice {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+
 
 // mennu mobile
 .header

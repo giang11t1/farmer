@@ -1,0 +1,153 @@
+{% extends "layout/_layout.html" %} {% block page-container %}
+<main class="retailers-detail">
+    <section class="banner">
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    {% for x in [1,2,3,4] %}
+                    <div class="swiper-slide slide-retailer">
+                        <img src="assets/images/upload/top-choice.png" alt="" class="top-choice">
+                        <div class="text-inner">
+                            <span class="note-top">cnk retailer</span>
+                            <img src="assets/images/upload/icon-banner.png" alt="">
+                            <div class="text">
+                                <h3>reach 50th store</h3>
+                                <h4 class="sub">in native chains</h4>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor%}
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <div class="row block block-detail">
+                <div class="wrap-img">
+                    <img src="assets/images/upload/top-choice.png" alt="" class="top-choice">
+                    <img src="assets/images/upload/img-detail1.png" alt="" class="main">
+                </div>
+                <div class="content">
+                    <h3 class="title-article">the bunker</h3>
+                    <div class="infor">
+                        <p>From: <span class="place">America / North America</span></p>
+                        <p>State: <span class="place">Native chains</span></p>
+                        <p>Store chains: <span class="place">50</span></p>
+                        <p>Local: <span>1907 N. 19th St. Tampa, FL 33605</span></p>
+                    </div>
+                    <button class="btn btn-primary">Offer Retailers</button>
+                    <div class="star">
+                        <div class="star-rating">
+                            <span class="fa fa-star active" data-rating="1"></span>
+                            <span class="fa fa-star active" data-rating="2"></span>
+                            <span class="fa fa-star active" data-rating="3"></span>
+                            <span class="fa fa-star active" data-rating="4"></span>
+                            <span class="fa fa-star" data-rating="5"></span>
+                            <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                        </div>
+                    </div>
+                    <span>(134 reviews)</span>
+                    <div class="text">
+                        <p>Established in 2006, the Bunker is an independant counter-service cafe' residing just off the main street of beautiful, historic Ybor City, FL (just outside of Downtown Tampa) serving coffees - made with locally roasted Buddy Brew beans since 2009, teas - steeped to order, host to music & art shows, & much more.</p>
+                        <p>Established in 2006, the Bunker is an independant counter-service cafe' residing just off the main street of beautiful, historic Ybor City, FL (just outside of Downtown Tampa) serving coffees - made with locally roasted Buddy Brew beans since 2009, teas - steeped to order, host to music & art shows, & much more.​</p>
+                        <p>Around 2005, The Bunker's early 1900's frame was rescued from demolition on the other side of Ybor for way of new parking garages then completely restored and renovated in it's current location nestled in between a few of the historic Ybor cigar roller "casitas." </p>
+                        <p>"Tre Amici", three friends, were up to the exciting project, and thusly, 'tre amici @ The Bunker' was born.</p>
+                        <p>Be sure to check out the fb or ig for mouthwatering coffee specials, scrumptious food specials, and delightful made-with-love baked goods!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="row block">
+                <div class="col-xs-5 col-md-3 no-padding-left">
+                    <div class="flag-col retailers">
+                        <div class="inner">
+                            <span class="top-text">Find the Roaster that suit to your business</span>
+                            <div class="name-col">
+                                <h3>RETAILERS</h3>
+                                <p class="sub">around the world</p>
+                            </div>
+                            <a href="#" class="link">explore more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-7 col-md-9 no-padding-right">
+                    <div id="owl-country3" class="owl-carousel owl-theme">
+                        {% for x in [1,2] %}
+                        <div class="item">
+                            <div class="wrap-img">
+                                <img src="assets/images/upload/img-slide5.png" alt="">
+                            </div>
+                            <div class="information">
+                                <p class="title">Minenhle Bokamoso</p>
+                                <p><i>State</i> <span class="place">Sout Africa | America</span></p>
+                                <div class="row">
+                                    <p class="percent">Positive: 99%</p>
+                                    <div class="star">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star active" data-rating="1"></span>
+                                            <span class="fa fa-star active" data-rating="2"></span>
+                                            <span class="fa fa-star active" data-rating="3"></span>
+                                            <span class="fa fa-star active" data-rating="4"></span>
+                                            <span class="fa fa-star" data-rating="5"></span>
+                                            <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="wrap-img">
+                                <img src="assets/images/upload/img-slide6.png" alt="">
+                            </div>
+                            <div class="information">
+                                <p class="title">Minenhle Bokamoso</p>
+                                <p><i>State</i> <span class="place">Sout Africa | America</span></p>
+                                <div class="row">
+                                    <p class="percent">Positive: 99%</p>
+                                    <div class="star">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star active" data-rating="1"></span>
+                                            <span class="fa fa-star active" data-rating="2"></span>
+                                            <span class="fa fa-star active" data-rating="3"></span>
+                                            <span class="fa fa-star active" data-rating="4"></span>
+                                            <span class="fa fa-star" data-rating="5"></span>
+                                            <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="wrap-img">
+                                <img src="assets/images/upload/img-slide7.png" alt="">
+                            </div>
+                            <div class="information">
+                                <p class="title">Minenhle Bokamoso</p>
+                                <p><i>State</i> <span class="place">Sout Africa | America</span></p>
+                                <div class="row">
+                                    <p class="percent">Positive: 99%</p>
+                                    <div class="star">
+                                        <div class="star-rating">
+                                            <span class="fa fa-star active" data-rating="1"></span>
+                                            <span class="fa fa-star active" data-rating="2"></span>
+                                            <span class="fa fa-star active" data-rating="3"></span>
+                                            <span class="fa fa-star active" data-rating="4"></span>
+                                            <span class="fa fa-star" data-rating="5"></span>
+                                            <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
