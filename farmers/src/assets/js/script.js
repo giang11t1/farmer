@@ -33,9 +33,9 @@ $(document).ready(function() {
     owl.owlCarousel({
     	itemsCustom : [
 	        [320,1],
-	        [360, 2],
-	        [375, 2],
-	        [414, 2],
+	        [360, 1],
+	        [375, 1],
+	        [414, 1],
 	        [568, 1],
 	        [600, 1],
 	        [900,1],
@@ -50,12 +50,12 @@ $(document).ready(function() {
     owl1.owlCarousel({
     	itemsCustom : [
 	        [320,1],
-	        [360, 2],
-	        [375, 2],
-	        [414, 2],
-	        [568, 3],
-	        [600, 3],
-	        [900,3],
+            [360, 1],
+            [375, 1],
+            [414, 1],
+            [568, 1],
+            [600, 1],
+            [900,1],
 	        [1024, 3],
 	      ],
         navigation: true,
@@ -67,12 +67,12 @@ $(document).ready(function() {
     owl2.owlCarousel({
     	itemsCustom : [
 	        [320,1],
-	        [360, 2],
-	        [375, 2],
-	        [414, 2],
-	        [568, 3],
-	        [600, 3],
-	        [900,3],
+            [360, 1],
+            [375, 1],
+            [414, 1],
+            [568, 1],
+            [600, 1],
+            [900,1],
 	        [1024, 3],
 	      ],
         navigation: true,
@@ -84,12 +84,12 @@ $(document).ready(function() {
     owl3.owlCarousel({
     	itemsCustom : [
 	        [320,1],
-	        [360, 2],
-	        [375, 2],
-	        [414, 2],
-	        [568, 3],
-	        [600, 3],
-	        [900,3],
+            [360, 1],
+            [375, 1],
+            [414, 1],
+            [568, 1],
+            [600, 1],
+            [900,1],
 	        [1024, 3],
 	      ],
         navigation: true,
@@ -101,16 +101,20 @@ $(document).ready(function() {
     owl4.owlCarousel({
     	itemsCustom : [
 	        [320,1],
-	        [360, 2],
-	        [375, 2],
-	        [414, 2],
-	        [568, 3],
-	        [600, 3],
-	        [900,3],
+            [360, 1],
+            [375, 1],
+            [414, 1],
+            [568, 1],
+            [600, 1],
+            [900,1],
 	        [1024, 3],
 	      ],
         navigation: true,
 
         navigationText: ["◀ Left <strong>arrow</strong>", "Right <strong>arrow</strong> ▶"]
+    });
+
+    $(function() {
+        $('nav#menu').mmenu();
     });
 });

@@ -31,23 +31,73 @@
 	<![endif]-->
 </head>
 <body class="{% block bodyclass%}{% endblock %}">
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-	<!--header-->
-	{% block header%}{% endblock %}
-	<!--page-container-->
-	{% block page-container %}{% endblock %}
-	<!--footer-->
-	{% block footer%}{% endblock %}
-	<!--modal-->
-	{% block modal%}{% endblock %}
-	<!--script-->
-	{% include "../block/_script.html" %}
+	<div id="page">
+	    <div class="header">
+	        <a href="#menu"><span></span></a>
+	        <img class="" src="assets/images/logo.png" alt="">
+	        <div class="cart pull-right">
+                Your cart
+            </div>
+            <div class="search-top">
+                <div class="input-group header-search">
+                    <div class="input-group-btn select-btn">
+                        <select class="selectpicker cate-search">
+                            <option>Farmers</option>
+                            <option>Danh mục 1</option>
+                            <option>Danh mục 2</option>
+                            <option>Danh mục 3</option>
+                            <option>Danh mục 5</option>
+                        </select>
+                    </div>
+                    <input aria-label="..." class="form-control input-search" placeholder="" type="text">
+                    <button type="submit" class="btn btn-search">Search</button>
+                </div>
+            </div>
+	    </div>
+	    
+	    <nav id="menu">
+	        <ul>
+	            <li><a href="#">Rosbusta</a></li>
+	            <li><span>cenephora</span>
+	                <ul>
+	                    <li><a href="#about/history">History</a></li>
+	                    <li><span>The team</span>
+	                        <ul>
+	                            <li><a href="#about/team/management">Management</a></li>
+	                            <li><a href="#about/team/sales">Sales</a></li>
+	                            <li><a href="#about/team/development">Development</a></li>
+	                        </ul>
+	                    </li>
+	                    <li><a href="#about/address">Our address</a></li>
+	                </ul>
+	            </li>
+	            <li><a href="#">liberica</a></li>
+	            <li><a href="#">laurina</a></li>
+	            <li><a href="#">kawisari</a></li>
+	            <li><a href="#">arabica</a></li>
+	            <li><a href="#">gesha</a></li>
+	            <li><a href="#">typica</a></li>
+	            <li><a href="#">bourbon</a></li>
+	            <li><a href="#">french mission</a></li>
+	            <li><a href="#">pointu</a></li>
+	            <li><a href="#">SL34</a></li>
+	            <li><a href="#">ethiopian harrar</a></li>
+	            <li><a href="#">ethiopian sidamo</a></li>
+	            <li><a href="#">Today's deal</a></li>
+	            <li><a href="#">Register your beans?</a></li>
+	            <li><a href="#">Sell your beans?</a></li>
+	        </ul>
+	    </nav>
+		<!--header-->
+		{% block header%}{% endblock %}
+		<!--page-container-->
+		{% block page-container %}{% endblock %}
+		<!--footer-->
+		{% block footer%}{% endblock %}
+		<!--modal-->
+		{% block modal%}{% endblock %}
+		<!--script-->
+		{% include "../block/_script.html" %}
+	</div>
 </body>
 </html>
