@@ -20,11 +20,12 @@ header {
         min-height: 98px;
         .top-menu {
             border-bottom: 1px solid #3b4453;
+            padding: 15px 0 2px;
             .search-top {
                 display: inline-block;
-                .input-group-btn {
-                    display: inline-block;
-                }
+                position: relative;
+                top: -5px;
+                margin-left: 20px;
             }
             .cart {
                 a {
@@ -35,6 +36,9 @@ header {
             }
         }
         .bottom-menu {
+            padding: 15px 0 8px;
+            display: inline-block;
+            width: 100%;
             .list-link {
                 a {
                     color: @primary-color;
@@ -58,4 +62,79 @@ header {
             }
         }
     }
+}
+.header-search {
+    border-radius: 4px;
+}
+.header-search .cate-search .dropdown-toggle {
+    min-width: 70px !important;
+    height: 25px;
+    padding: 0 25px;
+    padding-left: 10px;
+    border-color: transparent;
+    background: #3b4453;
+    color: #fff;
+    font-size: 12px;
+    &:hover,
+    &:focus,
+    &:active {
+        background: #3b4453;
+        color: #fff;
+        outline: none;
+    }
+}
+header input.form-control {
+    padding: 0 75px 0 12px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 13px;
+    height: 25px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #3b4453;
+}
+
+header .btn-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    height: 25px;
+    border-radius: 0;
+}
+.btn-search {
+    min-width: 70px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 34px 34px;
+    border-color: transparent;
+    font-size: 12px;
+    padding: 0 10px;
+    color: @primary-color;
+    border-radius: 0;
+    font-weight: 600;
+    background: #3b4453;
+    &:hover,
+    &:focus,
+    &:active {
+        color: @primary-color;
+        outline: none;
+    }
+}
+.btn-group > .btn:first-child {
+    margin-left: 0;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: auto;
+    border-right: 1px solid #ebebeb;
+}
+.bootstrap-select.btn-group .dropdown-menu.inner {
+    padding-top: 10px;
+    font-size: 12px;
+}
+.bootstrap-select.btn-group .dropdown-menu {
+    min-height: auto !important;
 }
