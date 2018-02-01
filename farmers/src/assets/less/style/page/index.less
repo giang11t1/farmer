@@ -28,6 +28,13 @@ body {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+.mm-menu .mm-navbar a, .mm-menu .mm-navbar>* {
+    color: #fff;
+}
+.mm-navbar__title {
+    text-transform:uppercase;
+    font-weight: bold;
+}
 // index
 .swiper-wrapper {
     .swiper-slide {
@@ -115,7 +122,7 @@ body {
 }
 .owl-buttons {
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: 100%;
     .owl-prev {
         position: relative;
@@ -166,23 +173,11 @@ body {
     .block-detail {
         .wrap-img {
             width: 50%;
-            height: 400px;
             float: left;
             margin-right: 30px;
-            margin-bottom: 35px;
-            position: relative;
-            overflow: hidden;
+            margin-bottom: 30px;
             img.main {
-                position: absolute;
-                left: -100%;
-                right: -100%;
-                top: -100%;
-                bottom: -100%;
-                margin: auto;
-                max-height: 100%;
-                max-width: 100%;
-                width: auto;
-                height: 100%;
+                margin: 0;
             }
         }
     }
@@ -192,6 +187,7 @@ body {
         height: 330px;
         width: 100%;
         display: inline-block;
+        border: @border;
         .inner {
             border: 1px solid #fff;
             height: 100%;
@@ -208,6 +204,7 @@ body {
             a.link {
                 color: #fff;
                 padding: 5px 44px;
+                text-align: center;
                 margin-top: 40px;
                 display: inline-block;
                 font-size: 20px;
@@ -436,12 +433,12 @@ body {
 .header a
 {
     display: block;
-    width: 28px;
+    width: 50px;
     height: 18px;
     padding: 11px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 15px;
+    left: 10px;
 }
 .header a:before,
 .header a:after
