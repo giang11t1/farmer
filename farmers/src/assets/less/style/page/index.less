@@ -4,16 +4,26 @@ body {
     font-family: 'Montserrat';
     font-size: 12px;
 }
-.star-rating {
-  line-height:32px;
-  font-size: 18px;
+.star {
+    margin-bottom: 40px;
+    .star-rating {
+        margin-right: 20px;
+    }
 }
-.star-rating .fa-star{
+.star-rating {
+    line-height: 18px;
+    font-size: 18px;
+    display: inline-block;
+    float: left;
+}
+
+.star-rating .fa-star {
     color: #e1e1e1;
     &.active {
         color: @primary-color;
     }
 }
+
 .note-top {
     padding: 3px 20px;
     background: @primary-color;
@@ -28,14 +38,37 @@ body {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-.mm-menu .mm-navbar a, .mm-menu .mm-navbar>* {
+
+.mm-menu .mm-navbar a,
+.mm-menu .mm-navbar>* {
     color: #fff;
 }
+
 .mm-navbar__title {
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: bold;
 }
+.list-major {
+    padding-left: 20px;
+    li {
+        list-style: initial;
+    }
+}
 // index
+.swiper-button-prev {
+    height: 48px;
+    width: 17px;
+    left: 35px;
+    background: url('../images/upload/btn-prev.png') no-repeat;
+}
+
+.swiper-button-next {
+    height: 48px;
+    width: 17px;
+    right: 35px;
+    background: url('../images/upload/btn-next.png') no-repeat;
+}
+
 .swiper-wrapper {
     .swiper-slide {
         height: 300px;
@@ -59,20 +92,23 @@ body {
     }
     .text-inner {
         padding-left: 95px;
-        padding-right: 41px;
+        padding-right: 64px;
         display: inline-block;
-        background: #4a494963;
-        min-width: 224px;
+        min-width: 266px;
         height: 300px;
-        
+        background-image: linear-gradient( to right, #10101066, #5858587a, rgba(72, 72, 71, 0.42), #58545400);
+        .note-top {
+            margin-bottom: 30px;
+        }
         .text {
-            h3, h4 {
+            h3,
+            h4 {
                 color: #fff;
                 text-transform: uppercase;
             }
             h3 {
                 font-size: 32px;
-                margin-bottom: 0;
+                margin: 0;
             }
             h4 {
                 font-size: 22px;
@@ -87,6 +123,7 @@ body {
                 color: @secondary-color;
                 text-transform: uppercase;
                 text-shadow: 2px 2px #3c400a;
+                line-height: 1;
             }
         }
     }
@@ -110,7 +147,8 @@ body {
                 .percent {
                     font-weight: bold;
                 }
-                .percent, .star {
+                .percent,
+                .star {
                     display: inline-block;
                 }
                 .star {
@@ -120,6 +158,7 @@ body {
         }
     }
 }
+
 .owl-buttons {
     position: absolute;
     top: 30%;
@@ -165,6 +204,7 @@ body {
         }
     }
 }
+
 .main {
     margin-top: 30px;
     .block {
@@ -199,6 +239,7 @@ body {
                     font-size: 44px;
                     font-weight: 400;
                     letter-spacing: 3px;
+                    margin-top: 30px;
                 }
             }
             a.link {
@@ -213,6 +254,7 @@ body {
                 border-bottom-right-radius: 20px;
                 border-top-right-radius: 20px;
                 border-top-left-radius: 20px;
+                display: block;
             }
         }
         &:after {
@@ -225,9 +267,9 @@ body {
             height: 0;
             width: 0;
             position: absolute;
-            pointer-events: none; 
+            pointer-events: none;
             border-width: 19px;
-            margin-top: -19px;       
+            margin-top: -19px;
         }
     }
     .top-best {
@@ -308,11 +350,14 @@ body {
     }
     .owl-carousel {
         .item {
-            width: 90%;
+            margin: 0 20px;
             .wrap-img {
                 img {
                     width: 100%;
                 }
+            }
+            .star .star-rating {
+                margin: 0;
             }
         }
     }
@@ -322,7 +367,7 @@ body {
         left: 0;
     }
     .wrap-img {
-        position: relative;        
+        position: relative;
     }
     .banner-middle {
         display: inline-block;
@@ -333,7 +378,7 @@ body {
             display: inline-block;
             margin-left: 135px;
             color: #fff;
-            width: 30%;
+            width: 35%;
             h3.title {
                 text-transform: uppercase;
                 font-size: 30px;
@@ -365,18 +410,26 @@ body {
 }
 
 .title-article {
-    font-size: 36px;
-    text-transform: uppercase;
+    font-size: 32px;
     color: #141a23;
     letter-spacing: 3px;
     margin: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    span {
+        font-size: 16px;
+        font-weight: 500;
+        &.place {
+            font-weight: 700;
+        }
+    }
 }
+
 .choice {
     padding: 3px 30px;
     background: #f7941d;
     color: #252f3f;
     font-size: 12px;
-    margin-top: 15px;
     font-weight: bold;
     display: inline-block;
     text-transform: uppercase;
@@ -388,12 +441,28 @@ body {
         color: #fff;
     }
 }
+.content2 {
+    .title-article2 {
+        font-size: 36px;
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 5px;
+    }
+    p {
+        margin-bottom: 5px;
+        &.descript {
+            margin: 20px 0 50px;
+        }
+    }
+}
 .infor {
     p {
         margin: 0;
     }
 }
-.retailers, .retailers-detail {
+
+.retailers,
+.retailers-detail {
     .banner {
         position: relative;
         .top-choice {
@@ -407,31 +476,30 @@ body {
 
 
 // mennu mobile
-.header
-{
+.header {
     text-align: center;
 }
-.header
-{
+
+.header {
     background: #252f3f;
     font-size: 16px;
     font-weight: bold;
     color: #fff;
     line-height: 64px;
     -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     width: 100%;
     height: auto;
     padding: 0 50px;
 }
-.header.fixed
-{
+
+.header.fixed {
     position: fixed;
     top: 0;
     left: 0;
 }
-.header a
-{
+
+.header a {
     display: block;
     width: 50px;
     height: 18px;
@@ -440,16 +508,16 @@ body {
     top: 15px;
     left: 10px;
 }
+
 .header a:before,
-.header a:after
-{
+.header a:after {
     content: '';
     display: block;
     background: #fff;
     height: 2px;
 }
-.header a span
-{
+
+.header a span {
     background: #fff;
     display: block;
     height: 2px;
@@ -465,9 +533,10 @@ body {
                 text-transform: uppercase;
             }
         }
-    }    
+    }
 }
-.mm-listitem .mm-btn_fullwidth+a, 
+
+.mm-listitem .mm-btn_fullwidth+a,
 .mm-listitem .mm-btn_fullwidth+span {
     color: #fff;
     text-transform: uppercase;

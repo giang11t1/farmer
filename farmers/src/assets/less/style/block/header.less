@@ -71,6 +71,9 @@ header {
 }
 .header-search {
     border-radius: 4px;
+    position: relative;
+    top: -5px;
+    margin: 0 3%;
 }
 .header-search .cate-search .dropdown-toggle {
     min-width: 70px !important;
@@ -81,6 +84,8 @@ header {
     background: #3b4453;
     color: #fff;
     font-size: 12px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     &:hover,
     &:focus,
     &:active {
@@ -100,6 +105,8 @@ header input.form-control {
     -moz-border-radius: 3px;
     border-radius: 3px;
     background: #3b4453;
+    border-top-right-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
 }
 
 header .btn-search {
@@ -108,7 +115,8 @@ header .btn-search {
     right: 0;
     z-index: 999;
     height: 25px;
-    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .btn-search {
     min-width: 70px;
@@ -141,8 +149,8 @@ header .btn-search {
     padding-top: 10px;
     font-size: 12px;
 }
-.bootstrap-select.btn-group .dropdown-menu {
+/* .bootstrap-select.btn-group .dropdown-menu {
     min-height: auto !important;
-}
+} */
 
 
